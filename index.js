@@ -25,4 +25,4 @@ const progressCounter = setInterval(() => {
   if (percent >= totalPercent) {
     clearInterval(progressCounter)
   }
-}, 20)
+}, 10)
