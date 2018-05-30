@@ -1,11 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   height: 100%;
   width: 100%;
 }
 
 body {
+  font-size: 60px;
   height: 100%;
   display: flex;
-  justify-content: center;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+#timeContainer {
+  margin-top: 15%;
+  margin: 15% 0 0 1em;
+}
+
+progress {
+  width: 100%;
+}
+
+#clock {
+  margin: 1em;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  align-self: flex-start;
 }

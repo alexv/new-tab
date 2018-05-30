@@ -13,9 +13,20 @@
 </head>
 
 <body>
-  <script src="js/scripts.js"></script>
-  <div class="time-container">
-    <span>"time"</span>
+  <script defer src="index.js"></script>
+  <div id="clock">
+    <span id="hours"></span>
+    <span>:</span>
+    <span id="minutes"></span>
+  </div>
+  <div id="timeContainer">
+    <div>
+      <span id="percentField">0</span>
+    </div>
+    <progress value="0" max="100" id="progressBar"></progress>
+    <div>
+      <span id="message">percent done with year</span>
+    </div>
   </div>
 </body>
 
