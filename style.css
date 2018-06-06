@@ -34,3 +34,21 @@ progress {
   justify-content: center;
   align-self: flex-start;
 }
+
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  height: 20px;
+  width: 100%;
+}
+progress::-webkit-progress-bar {
+  background: rgb(228, 228, 228);
+  box-shadow: inset 0px 0px 10px 5px rgb(204, 204, 204);
+  border-radius: 5px;
+}
+progress::-webkit-progress-value {
+  background-image: repeating-linear-gradient(135deg, #358ef3, #1882fa 8px);
+  border-radius: 5px;
+  position: relative;
+}
