@@ -2,32 +2,49 @@
 
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-  <title>New Tab</title>
-  <meta name="description" content="New Tab">
+    <title>New Tab</title>
+    <meta name="description" content="New Tab">
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-</head>
+  </head>
 
-<body>
-  <script defer src="js/index.js" type="module"></script>
-  <div id="clock">
-    <span id="hours"></span>
-    <span>:</span>
-    <span id="minutes"></span>
-  </div>
-  <div id="timeContainer">
-    <div>
-      <span id="percentField">0</span>
+  <body>
+    <script defer src="js/index.js" type="module"></script>
+    <div id="clock">
+      <span id="hours"></span>
+      <span>:</span>
+      <span id="minutes"></span>
     </div>
-    <progress value="0" max="100" id="progressBar"></progress>
-    <div>
-      <span id="message">percent done with year</span>
+    <div id="timeContainer">
+      <div>
+        <span id="percentField">0</span>
+      </div>
+      <progress value="0" max="100" id="progressBar"></progress>
+      <div>
+        <span id="message">percent done with year</span>
+      </div>
     </div>
-  </div>
-</body>
+    <input class="checkbox" id="checkbox" type="checkbox" checked>
+    <label class="toggle" for="checkbox">
+      <i class="star"></i>
+      <i class="star"></i>
+      <i class="star"></i>
+      <i class="star"></i>
+      <i class="star"></i>
+      <i class="star"></i>
+      <i class="star"></i>
+      <span class="disc">
+        <i></i><i></i><i></i>
+      </span>
+      <span class="cloud">
+        <i class="cloud__sub1"></i>
+        <i class="cloud__sub2"></i>
+      </span>
+    </label> 
+  </body>
 
 </html>
