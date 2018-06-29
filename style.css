@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #c0e6f6;
+  background-color: rgb(240,240,240);
   font-size: 60px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   height: 100%;
@@ -68,9 +68,6 @@ button {
 /* Toggle CSS*/
 *, *::before, *::after {
   box-sizing: border-box;
-}
-body {
-  background-color: #fbeeee;
 }
 .checkbox {
   display: none;
