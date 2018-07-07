@@ -6,4 +6,4 @@ Demo: https://newtab.avill.io
 
 Download: [Chrome Webstore](https://chrome.google.com/webstore/detail/new-tab/bfldknpmgpbfcnjolghejmaepnoamill)
 
-![newtab](./assets/newtab.png)
+![newtab](./assets/new-tab-demo.gif)
