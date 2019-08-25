@@ -7,20 +7,21 @@
 html {
   height: 100%;
   width: 100%;
+  background-color: rgb(36, 36, 36);
 }
 
 body {
-  background-color: rgb(240,240,240);
+  background-color: rgb(248, 248, 248);
   font-size: 60px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   height: 100%;
-  display: flex;
+  display: none;
   flex-flow: column;
   align-items: flex-start;
 }
 body.dark {
-  background-color: rgb(36,36,36); 
-  color: rgb(200,200,200)
+  background-color: rgb(36, 36, 36);
+  color: rgb(200, 200, 200);
 }
 
 #timeContainer {
@@ -53,8 +54,8 @@ progress::-webkit-progress-bar {
   border-radius: 5px;
 }
 progress.dark::-webkit-progress-bar {
-  background: rgb(50,50,50);
-  box-shadow: inset 0px 0px 10px 5px rgb(60,60,60);
+  background: rgb(50, 50, 50);
+  box-shadow: inset 0px 0px 10px 5px rgb(60, 60, 60);
 }
 progress::-webkit-progress-value {
   background-image: repeating-linear-gradient(135deg, #358ef3, #1882fa 8px);
@@ -66,7 +67,9 @@ button {
   width: 120px;
 }
 /* Toggle CSS*/
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 .checkbox {
@@ -140,7 +143,8 @@ button {
   opacity: 0;
   transition: transform 0.5s cubic-bezier(0.67, -0.01, 0.27, 1.45);
 }
-.cloud__sub1, .cloud__sub2 {
+.cloud__sub1,
+.cloud__sub2 {
   content: '';
   display: block;
   position: relative;
@@ -149,7 +153,8 @@ button {
   border-right-color: transparent;
   border-bottom-color: transparent;
 }
-.cloud__sub1:after, .cloud__sub2:after {
+.cloud__sub1:after,
+.cloud__sub2:after {
   content: '';
   position: absolute;
   background: #fff;
@@ -248,7 +253,9 @@ button {
   left: 48px;
   transform: rotate(110deg);
 }
-.checkbox:checked + .toggle .disc i:first-of-type, .checkbox:checked + .toggle .disc i:nth-of-type(2), .checkbox:checked + .toggle .disc i:last-of-type {
+.checkbox:checked + .toggle .disc i:first-of-type,
+.checkbox:checked + .toggle .disc i:nth-of-type(2),
+.checkbox:checked + .toggle .disc i:last-of-type {
   opacity: 0;
 }
 .checkbox:checked + .toggle .cloud {
@@ -259,4 +266,3 @@ button {
   opacity: 0;
   transform: scale(0);
 }
-
