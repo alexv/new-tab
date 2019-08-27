@@ -1,8 +1,8 @@
 import startClock from './clock.js';
 import startProgress from './progress.js';
 
-startClock();
 startProgress();
+startClock(true);
 
 let darkMode = false;
 let darkStorage = localStorage.getItem('darkMode');
@@ -29,4 +29,4 @@ const darkBtn = document.getElementById('checkbox');
 darkBtn.onclick = () => toggleDarkMode();
 
 // Display body after light/dark mode has been calculated to prevent screen flicker.
-document.getElementById('main').style.display = 'flex';
+document.getElementById('main').style.opacity = 1;

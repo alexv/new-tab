@@ -7,7 +7,7 @@
 html {
   height: 100%;
   width: 100%;
-  background-color: rgb(36, 36, 36);
+  background-color: black;
 }
 
 body {
@@ -15,9 +15,11 @@ body {
   font-size: 60px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   height: 100%;
-  display: none;
+  display: flex;
   flex-flow: column;
   align-items: flex-start;
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 body.dark {
   background-color: rgb(36, 36, 36);
@@ -39,6 +41,20 @@ progress {
   align-items: center;
   justify-content: center;
   align-self: flex-start;
+}
+#seconds {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+#clock:hover #seconds {
+  opacity: 1;
+}
+#seconds-seperator {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+#clock:hover #seconds-seperator {
+  opacity: 1;
 }
 
 progress {

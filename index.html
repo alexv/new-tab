@@ -14,8 +14,10 @@
     <script src="js/index.js" type="module"></script>
     <div id="clock">
       <span id="hours"></span>
-      <span>:</span>
+      <span id="minutes-seperator">:</span>
       <span id="minutes"></span>
+      <span id="seconds-seperator">:</span>
+      <span id="seconds"></span>
     </div>
     <div id="timeContainer">
       <div>
@@ -27,7 +29,7 @@
       </div>
     </div>
     <input class="checkbox" id="checkbox" type="checkbox" checked />
-    <label class="toggle" for="checkbox">
+    <label id="mode-button" class="toggle" for="checkbox">
       <i class="star"></i>
       <i class="star"></i>
       <i class="star"></i>
