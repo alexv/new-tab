@@ -8,7 +8,7 @@
     "default_title": "Open New Tab!"
   },
   "name": "new-tab",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "New tab Chrome Extension",
   "offline_enabled": true,
   "web_accessible_resources": ["*"]
